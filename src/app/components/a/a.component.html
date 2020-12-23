@@ -1,0 +1,13 @@
+<p>a works!</p>
+<div>a-component.name = {{name}}</div>
+<nav>
+  <ul>
+    <li><a routerLink="/a-component/a-a-component" routerLinkActive="active">(A-A) Component</a></li>
+    <li><a routerLink="./a-b-component" routerLinkActive="active">(A-B) Component - Relative Route</a></li>
+    <li><a routerLink="../b-component">(B) Component - Relative Route</a></li>
+  </ul>
+</nav>
+<button (click)="goToAA()">navigate to (A-A) Component (with ./hello%20world/something?name=jesus)</button>
+<div></div>
+<button (click)="goToAB()">navigate to (A-B) Component</button>
+<router-outlet></router-outlet>
